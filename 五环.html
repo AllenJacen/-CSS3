@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        .common,.common::after{
+            height: 200px;
+            width: 200px;
+            margin-right: 10px;
+            border-radius: 90%;
+            position: absolute;
+            float: left;
+        }
+        .common::after{
+            content: '';
+            top: -10px;
+            left: -10px;
+        }
+        #black{
+            border: 10px solid black;
+            left: 230px;
+            top: 0;
+        }
+        #black::after{
+            border: 10px solid black;
+            z-index: 1;
+            border-left-color: transparent;
+        }
+        #blue{
+            border: 10px solid blue;
+            left: 0px;
+            top: 0;
+        }
+        #blue::after{
+            border: 10px solid blue;
+            z-index: 1;
+            border-bottom-color: transparent;
+        }
+        #red{
+            border: 10px solid red;
+            left: 460px;
+            top: 0;
+        }
+        #red::after{
+            border: 10px solid red;
+            z-index: 2;
+            border-left-color: transparent;
+        }
+        #yellow{
+            border: 10px solid yellow;
+            left: 120px;
+            top: 110px;
+        }
+        #yellow::after{
+            border: 10px solid yellow;
+        }
+        #green{
+            border: 10px solid green;
+            left: 350px;
+            top: 110px;
+        }
+        #green::after{
+            border: 10px solid green;
+            z-index: 1;
+            border-top-color: transparent;
+        }
+    </style>
+</head>
+<body>
+<div id="blue"  class="common"></div>
+<div id="black" class="common"></div>
+<div id="red"   class="common"></div>
+<div id="yellow" class="common"></div>
+<div id="green" class="common"></div>
+</body>
+</html>

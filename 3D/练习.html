@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    body{
+        /*background: black;*/
+        perspective: 1000px;
+        perspective-origin: 10px -800px;
+    }
+    #container{
+        margin: 200px auto;
+        width: 200px;
+        height: 200px;
+        border: 1px dashed black;
+        transform-style: preserve-3d;
+    }
+    .cube{
+        width: 200px;
+        height: 200px;
+        background: yellow;
+        font-size: 80px;
+        line-height: 200px;
+        text-align: center;
+        position: absolute;
+    }
+    #one{
+        transform: rotateY(45deg) translateZ(100px);
+    }
+</style>
+</head>
+<body>
+<div id="container">
+    <div id="one" class="cube">1</div>
+</div>
+</body>
+</html>
